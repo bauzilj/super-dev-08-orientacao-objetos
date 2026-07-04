@@ -1,6 +1,7 @@
 import javax.swing.JOptionPane;
 
 public class FabricanteExecutor {
+    
     public void executar() {
 
         Fabricante blusoft = new Fabricante();
