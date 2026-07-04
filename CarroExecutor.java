@@ -23,10 +23,10 @@ public class CarroExecutor {
         Carro carro1 = new Carro();
         carro1.modelo = JOptionPane.showInputDialog("Digite o modelo do carro");
         carro1.cor = JOptionPane.showInputDialog("Digite a cor");
-        carro1.isElectrico = JOptionPane.showInputDialog("Carro eletrico?: [true/false]");
-        carro1.motor = JOptionPane.showInputDialog("Digite a potencia do motor");
+        carro1.isElectrico = Boolean.parseBoolean(JOptionPane.showInputDialog("Carro eletrico?: [true/false]"));
+        carro1.motor = Double.parseDouble(JOptionPane.showInputDialog("Digite a potencia do motor"));
         carro1.marca = JOptionPane.showInputDialog("Digite o nome da marca");
-        carro1.aro = JOptionPane.showInputDialog("Digite o aro do carro");
+        carro1.aro = Integer.parseInt(JOptionPane.showInputDialog("Digite o aro do carro"));
 
         JOptionPane.showConfirmDialog(null,
 
